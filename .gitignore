@@ -1,0 +1,49 @@
+# ==========================================
+# REGRAS DE SEGURANÇA E PRIVACIDADE (IRPF)
+# ==========================================
+
+# Ignorar todo o conteúdo da pasta de informes de rendimentos
+/informes/*
+
+# Exceto o arquivo explicativo para manter a estrutura de diretórios no Git
+!/informes/README.md
+
+# Bloqueio global de arquivos que possam conter dados fiscais sensíveis
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.doc
+*.docx
+*.png
+!/irpf_skill_banner.png
+*.jpg
+*.jpeg
+*.xml
+
+# ==========================================
+# EDITOR & OS JUNK
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Configurações locais de IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Pastas de configuração local de assistentes
+.claude/
+.gemini/
+*.log
+nano_banana_debug.json
